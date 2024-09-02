@@ -2,7 +2,6 @@
   hosts: web
   tasks: need to install nginx and start
   - name: installing nginx
-    tasks:
     ansible.builtin.package:
       name: nginx
       state: present
