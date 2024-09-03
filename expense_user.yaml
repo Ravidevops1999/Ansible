@@ -10,3 +10,7 @@
   - name: print the user information
     ansible.builtin.debug:
       msg : " the user is {{USER}}"
+
+  - name: checking the user exists or not
+    ansible.builtin.command: useradd expense
+    when: USER.rc !=0    
