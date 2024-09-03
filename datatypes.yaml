@@ -1,0 +1,19 @@
+- name: datatypes
+  hosts: local
+  vars:
+    course: "DevOps with AWS"
+    duration: 120
+    topics:
+    - linux
+    - ansible
+    - jenkins
+    - k8
+    - git
+    live: true
+    tools:
+      cm: ansible
+      ci: jenkins
+      could: aws
+  tasks:
+  ansible.biultin.debug:
+    msg: "Hi I am learning {{course}}, duration is: {{duration}}, topics are: {{topics}}, and live {{live}}, tolls used are {{tools}}"
