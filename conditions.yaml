@@ -8,7 +8,7 @@
   tasks:
   - name: please enter the number if it is less than 10
     ansible.builtin.debug:
-      msg: "the given number {{number}} is less than 10"
+      msg: "the given number {{my_number}} is less than 10"
     when: my_number < 10
   - name: please enter the number if it is greater than or equal to 10
     ansible.builtin.debug:
