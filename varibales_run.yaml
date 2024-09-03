@@ -1,0 +1,6 @@
+- name: varibales while run time
+  hosts: web
+  tasks:
+  - name: print the course information
+    ansible.builtin.debug:
+      msg:"Hi {{Name}}, {{Greetings}}"
