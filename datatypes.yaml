@@ -15,5 +15,5 @@
       ci: jenkins
       could: aws
   tasks:
-  ansible.biultin.debug:
+  ansible.builtin.debug:
     msg: "Hi I am learning {{course}}, duration is: {{duration}}, topics are: {{topics}}, and live {{live}}, tolls used are {{tools}}"
